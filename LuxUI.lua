@@ -203,10 +203,11 @@ function Luxt1.CreateWindow(libName, logoId)
     wave.Size = UDim2.new(0.97865659, 0, 0.557522118, 0)
     wave.Image = "https://www.roblox.com/asset-thumbnail/image?assetId=114506237962007&width=420&height=420&format=png"
     wave.ImageColor3 = Color3.fromRGB(255, 255, 255)
-    wave.ImageTransparency = 0.85
+    wave.ImageTransparency = 1 -- Fully transparent
     wave.ScaleType = Enum.ScaleType.Slice
     wave.AnchorPoint = Vector2.new(0.5, 0.5) -- Set anchor point to center
-    wave.Position = UDim2.new(0.5, 0, 0.5, 0) -- Center in the middle
+    wave.Position = UDim2.new(0.5, -wave.Size.X.Offset / 2, 0.5, 0) -- Center more to the left
+
 
     MainCorner_4.CornerRadius = UDim.new(0, 3)
     MainCorner_4.Name = "MainCorner"
