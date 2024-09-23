@@ -775,7 +775,7 @@ function library:Introduction()
     wait(3.5)
     local startTime = tick()
     while tick() - startTime < 3 do
-        hashLogo.Rotation = hashLogo.Rotation + 8
+        hashLogo.Rotation = hashLogo.Rotation + 10
         wait(0.01)
         end
     end
