@@ -773,8 +773,7 @@ function library:Introduction()
     local tweenInfo = TweenInfo.new(2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
     local goal = {Rotation = 1080}
     local tween = TweenService:Create(hashLogo, tweenInfo, goal)
-    tween.Completed:Wait() -- Wait for the tween to finish
-    hashLogo.Rotation = 0
+    tween:Play()
     
     spect.Name = "spect"
     spect.Parent = background
