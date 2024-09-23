@@ -759,6 +759,7 @@ function library:Introduction()
 
     -- Hash Logo
     local TweenService = game:GetService("TweenService")
+    local RunService = game:GetService("RunService")
     hashLogo.Name = "hashLogo"
     hashLogo.Parent = background
     hashLogo.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -770,6 +771,15 @@ function library:Introduction()
     hashLogo.Image = "https://www.roblox.com/asset-thumbnail/image?assetId=97006639061558&width=420&height=420&format=png" -- Updated URL
     hashLogo.ImageColor3 = Color3.fromRGB(115, 159, 255)
     hashLogo.ImageTransparency = 1
+    local function spinLogo()
+    while true do
+        hashLogo.Rotation = hashLogo.Rotation + 1
+        wait(0.01)
+        end
+    end
+
+-- Start spinning in a separate thread
+coroutine.wrap(spinLogo)()
     
     spect.Name = "spect"
     spect.Parent = background
