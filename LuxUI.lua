@@ -273,7 +273,7 @@ function Luxt1.CreateWindow(libName, logoId)
         tabLogo.Size = UDim2.new(0, 25, 0, 25)
         tabLogo.ZIndex = 2
         tabLogo.Image = "rbxassetid://"..tabId
-        tabLogo.ImageColor3 = Color3.fromRGB(153, 255, 238)
+        tabLogo.ImageColor3 = Color3.fromRGB(255, 255, 255)
         --
 
         local newPage = Instance.new("ScrollingFrame")
@@ -397,7 +397,7 @@ function Luxt1.CreateWindow(libName, logoId)
             sectionExpannd.Size = UDim2.new(0, 25, 0, 25)
             sectionExpannd.ZIndex = 2
             sectionExpannd.Image = "rbxassetid://3926305904"
-            sectionExpannd.ImageColor3 = Color3.fromRGB(153, 255, 238)
+            sectionExpannd.ImageColor3 = Color3.fromRGB(255, 255, 255)
             sectionExpannd.ImageRectOffset = Vector2.new(564, 284)
             sectionExpannd.ImageRectSize = Vector2.new(36, 36)
             sectionExpannd.MouseButton1Click:Connect(function()
@@ -582,7 +582,7 @@ function Luxt1.CreateWindow(libName, logoId)
                                  callback(on) 
                                 if on then
                                     checkBtn.Parent.toggleInfo.TextColor3 = Color3.fromRGB(255, 255, 255)
-                                    checkBtn.ImageColor3 = Color3.fromRGB(153, 255, 238)
+                                    checkBtn.ImageColor3 = Color3.fromRGB(255, 255, 255)
                                     checkBtn.ImageRectOffset = Vector2.new(4, 836)
                                     checkBtn.ImageRectSize = Vector2.new(48,48)
                                 else
@@ -1125,7 +1125,7 @@ function Luxt1.CreateWindow(libName, logoId)
                                     expand_more.Size = UDim2.new(0, 25, 0, 25)
                                     expand_more.ZIndex = 2
                                     expand_more.Image = "rbxassetid://3926305904"
-                                    expand_more.ImageColor3 = Color3.fromRGB(153, 255, 238)
+                                    expand_more.ImageColor3 = Color3.fromRGB(255, 255, 255)
                                     expand_more.ImageRectOffset = Vector2.new(564, 284)
                                     expand_more.ImageRectSize = Vector2.new(36, 36)
                                     expand_more.MouseButton1Click:Connect(function()
