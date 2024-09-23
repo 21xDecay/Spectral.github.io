@@ -772,7 +772,7 @@ function library:Introduction()
     hashLogo.ImageColor3 = Color3.fromRGB(115, 159, 255)
     hashLogo.ImageTransparency = 1
     local function spinLogo()
-    wait(1)
+    wait(2.2)
     local startTime = tick()
     while tick() - startTime < 3 do
         hashLogo.Rotation = hashLogo.Rotation + 5
