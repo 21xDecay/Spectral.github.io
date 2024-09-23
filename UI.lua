@@ -771,7 +771,7 @@ function library:Introduction()
     hashLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
     hashLogo.ImageTransparency = 1
     local tweenInfo = TweenInfo.new(2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
-    local goal = {Rotation = 360}
+    local goal = {Rotation = 1080}
     local tween = TweenService:Create(hashLogo, tweenInfo, goal)
     tween.Completed:Wait() -- Wait for the tween to finish
     hashLogo.Rotation = 0
@@ -794,7 +794,7 @@ function library:Introduction()
     text.Position = UDim2.new(0.912751675, 0, 0, 0)
     text.Size = UDim2.new(0, 26, 0, 21)
     text.Font = Enum.Font.Code
-    text.Text = "hash"
+    text.Text = "Spect"
     text.TextColor3 = Color3.fromRGB(124, 124, 124)
     text.TextSize = 10.000
     text.TextTransparency = 1
