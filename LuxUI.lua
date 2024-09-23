@@ -205,7 +205,8 @@ function Luxt1.CreateWindow(libName, logoId)
     wave.ImageColor3 = Color3.fromRGB(255, 255, 255)
     wave.ImageTransparency = 0.01
     wave.ScaleType = Enum.ScaleType.Slice
-    wave.Position = UDim2.new(0.5, -wave.Size.X.Offset / 2, 0.5, -wave.Size.Y.Offset / 2) -- Centering the image
+    wave.AnchorPoint = Vector2.new(0.5, 0.5) -- Set anchor point to center
+    wave.Position = UDim2.new(0.5, 0, 0.5, 0) -- Center in the middle
 
     MainCorner_4.CornerRadius = UDim.new(0, 3)
     MainCorner_4.Name = "MainCorner"
