@@ -773,7 +773,7 @@ function library:Introduction()
     hashLogo.ImageTransparency = 1
     local function spinLogo()
     while true do
-        hashLogo.Rotation = hashLogo.Rotation + 5
+        hashLogo.Rotation = hashLogo.Rotation + 20
         wait(0.01)
         end
     end
