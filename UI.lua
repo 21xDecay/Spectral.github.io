@@ -771,12 +771,11 @@ function library:Introduction()
     hashLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
     hashLogo.ImageTransparency = 1
 
-    local tweenInfo = TweenInfo.new(2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, -1, true)
+    local tweenInfo = TweenInfo.new(2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
     local goal = {Rotation = 360}
 
     local tween = TweenService:Create(hashLogo, tweenInfo, goal)
     tween:Play()
-
     
     spect.Name = "spect"
     spect.Parent = background
