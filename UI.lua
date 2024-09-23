@@ -742,7 +742,8 @@ function library:Introduction()
     barLayout.Parent = barFolder
     barLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
     barLayout.SortOrder = Enum.SortOrder.LayoutOrder
-    
+
+    -- blueberry
     -- Spect Logo
     spectLogo.Name = "spectLogo"
     spectLogo.Parent = background
@@ -750,13 +751,14 @@ function library:Introduction()
     spectLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     spectLogo.BackgroundTransparency = 1.000
     spectLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
-    spectLogo.Size = UDim2.new(0, 448, 0, 150)
+    spectLogo.Size = UDim2.new(0, 150, 0, 150) -- Same size as hashLogo
     spectLogo.Visible = true
     spectLogo.Image = "https://www.roblox.com/asset-thumbnail/image?assetId=114506237962007&width=420&height=420&format=png" -- Updated URL
     spectLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
     spectLogo.ImageTransparency = 1
 
     -- Hash Logo
+    local TweenService = game:GetService("TweenService")
     hashLogo.Name = "hashLogo"
     hashLogo.Parent = background
     hashLogo.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -768,6 +770,12 @@ function library:Introduction()
     hashLogo.Image = "https://www.roblox.com/asset-thumbnail/image?assetId=97006639061558&width=420&height=420&format=png" -- Updated URL
     hashLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
     hashLogo.ImageTransparency = 1
+
+    local tweenInfo = TweenInfo.new(2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, -1, true)
+    local goal = {Rotation = 360}
+
+    local tween = TweenService:Create(hashLogo, tweenInfo, goal)
+    tween:Play()
 
     
     spect.Name = "spect"
