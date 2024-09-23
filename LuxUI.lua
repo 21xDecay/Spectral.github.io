@@ -203,7 +203,7 @@ function Luxt1.CreateWindow(libName, logoId)
     wave.Position = UDim2.new(0.0213434305, 0, 0, 0)
     wave.Size = UDim2.new(0.97865659, 0, 0.557522118, 0)
     wave.Image = "https://www.roblox.com/asset-thumbnail/image?assetId=114506237962007&width=420&height=420&format=png"
-    wave.ImageColor3 = Color3.fromRGB(181, 249, 255)
+    wave.ImageColor3 = Color3.fromRGB(255, 181, 181)
     wave.ImageTransparency = 0.300
     wave.ScaleType = Enum.ScaleType.Slice
 
