@@ -206,7 +206,7 @@ function Luxt1.CreateWindow(libName, logoId)
     wave.ImageTransparency = 0.85 -- Fully transparent
     wave.ScaleType = Enum.ScaleType.Slice
     wave.AnchorPoint = Vector2.new(0.5, 0.5) -- Set anchor point to center
-    wave.Position = UDim2.new(0.5, -wave.Size.X.Offset / 2, 0.5, 0) -- Center more to the left
+    wave.Position = UDim2.new(0.40, 0, 0.5, 0) -- Move slightly to the left
 
 
     MainCorner_4.CornerRadius = UDim.new(0, 3)
