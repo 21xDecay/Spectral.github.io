@@ -770,12 +770,11 @@ function library:Introduction()
     hashLogo.Image = "https://www.roblox.com/asset-thumbnail/image?assetId=97006639061558&width=420&height=420&format=png" -- Updated URL
     hashLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
     hashLogo.ImageTransparency = 1
-
     local tweenInfo = TweenInfo.new(2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
     local goal = {Rotation = 360}
-
     local tween = TweenService:Create(hashLogo, tweenInfo, goal)
-    tween:Play()
+    tween.Completed:Wait() -- Wait for the tween to finish
+    hashLogo.Rotation = 0
     
     spect.Name = "spect"
     spect.Parent = background
